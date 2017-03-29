@@ -1,0 +1,18 @@
+{
+    "name": "previewtechs/php-utilities",
+    "description": "PHP UUID generation library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shaharia Azam",
+            "email": "shaharia.azam@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Previewtechs\\PHPUtilities\\": "src"
+        }
+    }
+}
