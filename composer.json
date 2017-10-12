@@ -9,7 +9,6 @@
             "email": "shaharia.azam@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Previewtechs\\PHPUtilities\\": "src"
