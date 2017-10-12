@@ -29,4 +29,32 @@ class EmailAddress
         $email = (isset($aMatch[3])) ? $aMatch[3] : null;
         return array('name' => $name ? trim($name) : null, 'email_address' => $email ? trim($email) : null);
     }
+
+    /**
+     * @param $emailAddresses
+     *
+     * @return array
+     */
+    public static function mailAddressArrayBuilder($emailAddresses)
+    {
+        $result = [];
+
+        if (sizeof($emailAddresses) > 0) {
+            foreach ($emailAddresses as $item) {
+                $splitPart = self::splitParts($item);
+                if (!empty($splitPart['email_address'])) {
+                    $email['email_address'] = $splitPart['email_address'];
+
+                    if (!empty($splitPart['name'])) {
+                        $email['name'] = $splitPart['name'];
+                    }
+
+                    $result[] = $email;
+                    unset($splitPart, $email);
+                }
+            }
+        }
+
+        return $result;
+    }
 }
