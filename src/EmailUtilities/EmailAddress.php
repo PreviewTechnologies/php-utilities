@@ -31,6 +31,8 @@ class EmailAddress
     }
 
     /**
+     * Email address array builder with name and email_address key
+     *
      * @param $emailAddresses
      *
      * @return array
