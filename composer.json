@@ -13,6 +13,5 @@
         "psr-4": {
             "Previewtechs\\PHPUtilities\\": "src"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
